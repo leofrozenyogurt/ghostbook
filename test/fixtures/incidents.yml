@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  date_of_incident: 2012-09-24
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  description: MyText
+  email: MyString
+  can_we_send_you_email: false
+
+two:
+  name: MyString
+  date_of_incident: 2012-09-24
+  address: MyString
+  latitude: 1.5
+  longitude: 1.5
+  description: MyText
+  email: MyString
+  can_we_send_you_email: false

@@ -1,0 +1,46 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @incident.name %>
+</p>
+
+<p>
+  <b>Date of incident:</b>
+  <%= @incident.date_of_incident %>
+</p>
+
+<p>
+  <b>Address:</b>
+  <%= @incident.address %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @incident.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @incident.longitude %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @incident.description %>
+</p>
+
+<p>
+  <b>Email:</b>
+  <%= @incident.email %>
+</p>
+
+<p>
+  <b>Can we send you email:</b>
+  <%= @incident.can_we_send_you_email %>
+</p>
+<%= image_tag "http://maps.google.com/maps/api/staticmap?size=450x300&sensor=false&zoom=16&markers=#{@incident.latitude}%2C#{@incident.longitude}" %>
+
+
+<%= link_to 'Edit', edit_incident_path(@incident) %> |
+<%= link_to 'Back', incidents_path %>
